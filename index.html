@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan App || One solution for many problem</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Roshan</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <header>
+        <div class="banner">
+            <h1>Welcome to Roshan App</h1>
+            <p>Register your complaint with ease</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Left Section: Address and Form -->
+            <div class="address">
+                <button id="get-location">Share the location of the problem</button>
+                <p id="status">Click the button to get your location.</p>
+                <p id="address">Address will appear here...</p>
+                
+                <!-- Complaint Form -->
+                <form id="complaint-form">
+                    <label for="upload-photo">Upload Photo of the problem!!</label>
+                    <input type="file" id="upload-photo" accept="image/*" required>
+                    
+                    <button type="submit">Submit Complaint</button>
+                </form>
+
+                <!-- Confirmation Message -->
+                <p id="confirmation-message" class="hidden">Your complaint has been successfully registered. We will resolve your issue shortly!</p>
+            </div>
+
+            <!-- Right Section: Map -->
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MyLocation. All rights reserved.</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
